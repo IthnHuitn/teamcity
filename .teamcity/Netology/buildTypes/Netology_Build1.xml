@@ -35,7 +35,7 @@
           <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
           <param name="teamcity.step.mode" value="default" />
           <param name="teamcity.tool.jacoco" value="%teamcity.tool.jacoco.DEFAULT%" />
-          <param name="userSettingsSelection" value="nexus-settings" />
+          <param name="userSettingsSelection" value="userSettingsSelection:default" />
         </parameters>
       </runner>
     </build-runners>
