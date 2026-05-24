@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vcs-root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="be774518-53ab-42f9-a897-3ea2f7515c94" type="jetbrains.git" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2025.3/project-config.xsd">
+  <name>git@github.com:IthnHuitn/teamcity.git#refs/heads/master</name>
+  <param name="authMethod" value="TEAMCITY_SSH_KEY" />
+  <param name="branch" value="refs/heads/master" />
+  <param name="ignoreKnownHosts" value="true" />
+  <param name="submoduleCheckout" value="CHECKOUT" />
+  <param name="teamcity:branchSpec" value="refs/heads/*" />
+  <param name="teamcitySshKey" value="id_rsa_diploma" />
+  <param name="url" value="git@github.com:IthnHuitn/teamcity.git" />
+  <param name="useAlternates" value="AUTO" />
+</vcs-root>
+
