@@ -16,7 +16,7 @@
           <param name="pomLocation" value="pom.xml" />
           <param name="runnerArgs" value="-Dmaven.test.failure.ignore=true" />
           <param name="teamcity.step.mode" value="default" />
-          <param name="userSettingsSelection" value="nexus settings" />
+          <param name="userSettingsSelection" value="nexus-settings" />
         </parameters>
       </runner>
       <runner id="Step2" name="Step2" type="Maven2">
@@ -35,7 +35,7 @@
           <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
           <param name="teamcity.step.mode" value="default" />
           <param name="teamcity.tool.jacoco" value="%teamcity.tool.jacoco.DEFAULT%" />
-          <param name="userSettingsSelection" value="nexus settings" />
+          <param name="userSettingsSelection" value="nexus-settings" />
         </parameters>
       </runner>
     </build-runners>
