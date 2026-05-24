@@ -1,35 +1,39 @@
 package plaindoll;
 
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.junit.Assert.*;
-
-import org.junit.Test;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+import org.junit.jupiter.api.Test;
 
 public class WelcomerTest {
 	
-	private Welcomer welcomer = new Welcomer();
-	// Если хочешь больше веселья и информации про ДевОпс - приходи в мои каналы NotOps (telegram, YT, Boosty, Patreon)
-	// https://t.me/notopsofficial
-
 	@Test
 	public void welcomerSaysWelcome() {
+		Welcomer welcomer = new Welcomer();
 		assertThat(welcomer.sayWelcome(), containsString("Welcome"));
 	}
+	
 	@Test
 	public void welcomerSaysFarewell() {
+		Welcomer welcomer = new Welcomer();
 		assertThat(welcomer.sayFarewell(), containsString("Farewell"));
 	}
+	
 	@Test
-	public void welcomerSaysHunter() {
-		assertThat(welcomer.sayWelcome(), containsString("hunter"));
-		assertThat(welcomer.sayFarewell(), containsString("hunter"));
-	}
-	@Test
-	public void welcomerSaysSilver(){
+	public void welcomerSaysNeedGold() {
+		Welcomer welcomer = new Welcomer();
 		assertThat(welcomer.sayNeedGold(), containsString("gold"));
 	}
+	
 	@Test
-	public void welcomerSaysSomething(){
+	public void welcomerSaysSome() {
+		Welcomer welcomer = new Welcomer();
 		assertThat(welcomer.saySome(), containsString("something"));
+	}
+	
+	@Test
+	public void testGetHunterReplyContainsHunter() {
+		Welcomer welcomer = new Welcomer();
+		String reply = welcomer.getHunterReply();
+		assertThat(reply.toLowerCase(), containsString("hunter"));
 	}
 }

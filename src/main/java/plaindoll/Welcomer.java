@@ -15,4 +15,17 @@ public class Welcomer{
 	public String saySome(){
 		return "something in the way";
 	}
+	
+	public String getHunterReply() {
+		String[] replies = {
+			"Welcome, hunter! The hunt begins.",
+			"Ah, a skilled hunter has arrived!",
+			"Hunter, your prey awaits in the shadows.",
+			"A true hunter never rests. Ready for the challenge?",
+			"The wilds call for a hunter like you, hunter.",
+			"Hunter! Your reputation precedes you."
+		};
+		int randomIndex = (int)(Math.random() * replies.length);
+		return replies[randomIndex];
+	}
 }
